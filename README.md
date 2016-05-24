@@ -40,3 +40,8 @@ All variable like `XWIKI_PARAM_NAME` are equivalents of the configuration parame
 
 * Backup permanentDirectory `/xwiki_data`
 * Backup Database
+
+## Version/Tag info
+
+* The number before the minus (x.x.x) is the Version of XWiki
+* The number after the minus (-x) is the Version of the Dockerfile for the XWiki version
