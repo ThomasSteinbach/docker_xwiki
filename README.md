@@ -8,6 +8,14 @@ See `docker-compose.yml` for example.
 
 ## Variables
 
+### Database Configuration
+
+| Variable | Default | Description|
+|-----------|---|----|
+| MYSQL_USERNAME | xwiki | The MySQL user for XWiki. |
+| MYSQL_PASSWORD | xwiki | The password for the MySQL user. |
+| MYSQL_DATABASE | xwiki | The database used by XWiki.
+
 ### Tomcat configuration
 
 | Variable | Default | Description|
