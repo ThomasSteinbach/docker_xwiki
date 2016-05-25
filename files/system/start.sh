@@ -9,9 +9,9 @@ function xwiki_first_start(){
 }
 
 function configure_xwiki(){
-  sed -i "s/replacemysqldatabase/${MYSQL_DATABASE:-xwiki}" /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml
-  sed -i "s/replacemysqlusername/${MYSQL_USERNAME:-xwiki}" /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml
-  sed -i "s/replacemysqlpassword/${MYSQL_PASSWORD:-xwiki}" /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml
+  sed -i "s/replacemysqldatabase/${MYSQL_DATABASE:-xwiki}/g" /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml
+  sed -i "s/replacemysqlusername/${MYSQL_USERNAME:-xwiki}/g" /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml
+  sed -i "s/replacemysqlpassword/${MYSQL_PASSWORD:-xwiki}/g" /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml
 
   xwiki-set-cfg 'xwiki.store.attachment.hint' 'file'
   xwiki-set-cfg 'xwiki.store.attachment.versioning.hint' 'file'
