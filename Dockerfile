@@ -1,4 +1,4 @@
-FROM tomcat:latest
+FROM tomcat:7.0.69-jre8
 MAINTAINER Thomas Steinbach (@aikq.de)
 
 # install libraries for LaTeX formulas in XWiki
