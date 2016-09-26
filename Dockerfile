@@ -17,7 +17,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT && \
     rm -rf /usr/local/tomcat/webapps/host-manager
 
 # download and extract xwiki
-RUN curl -o /tmp/xwiki.war -SL 'http://download.forge.ow2.org/xwiki/xwiki-enterprise-web-7.4.3.war' && \
+RUN curl -o /tmp/xwiki.war -SL 'http://download.forge.ow2.org/xwiki/xwiki-enterprise-web-7.4.5.war' && \
     unzip -qq /tmp/xwiki.war -d /usr/local/tomcat/webapps/ROOT && \
     rm /tmp/xwiki.war
 
